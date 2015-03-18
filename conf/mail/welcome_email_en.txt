@@ -1,4 +1,4 @@
-﻿From: tja-data.dk <postmaster@localhost.localdomain>
+﻿From: Admin <postmaster@localhost.localdomain>
 Subject: Welcome to your new email account.
 
 Welcome to your new email account. Your webmaster.
