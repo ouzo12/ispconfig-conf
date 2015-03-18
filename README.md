@@ -6,4 +6,5 @@ Made because im lazy and dont want to change them everytime i install a new ispc
 
 
 install :
-cp -rf /root/git/ispconfig-conf/conf/* /usr/local/ispconfig/server/conf/
+
+cp -rf conf/* /usr/local/ispconfig/server/conf/
