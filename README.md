@@ -10,7 +10,9 @@ This makes sperated mail.log files for each websites.
 install :
 
 cp -rf conf/* /usr/local/ispconfig/server/conf-custom/
+
 cp check-web-mail-log.sh /root/scripts
 
 insert to /etc/crontab
+
 */10 * * * * root /root/scripts/check-web-mail-log.sh >/dev/null 2>&1
