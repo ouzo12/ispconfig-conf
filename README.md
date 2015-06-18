@@ -7,4 +7,4 @@ Made because im lazy and dont want to change them everytime i need a unbranded s
 
 install :
 
-cp -rf conf/* /usr/local/ispconfig/server/conf/
+cp -rf conf/* /usr/local/ispconfig/server/conf-custom/
