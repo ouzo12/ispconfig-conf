@@ -12,6 +12,7 @@ install :
 cp -rf conf/* /usr/local/ispconfig/server/conf-custom/
 
 cp check-web-mail-log.sh /root/scripts
+cp nginx* /root/scripts
 
 insert to /etc/crontab
 

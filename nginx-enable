@@ -1,0 +1,18 @@
+#!/bin/bash
+availablepath=/etc/nginx/sites-available
+enablepath=/etc/nginx/sites-enabled
+
+enable=$1
+
+if [ -f $enablepath/$enable ]; then
+ echo $enable already enabled
+fi
+
+if [ ! -f $availablepath/$enable ]; then
+ echo $availablepath/$enable not found
+ else
+ ln -s $availablepath/$enable $enablepath/$enable
+ echo $enable is now enabled. reload nginx
+ echo do : service nginx reload
+fi
+

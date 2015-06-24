@@ -1,0 +1,20 @@
+#!/bin/bash
+enablepath=/etc/nginx/sites-enabled
+
+enable=$1
+
+if [ "$enable" == "" ]; then
+ echo "./nginx-disable <file>"
+ echo "following files are available :"
+ echo "`ls -b $enablepath`"
+ exit 0
+fi
+
+
+if [ -f $enablepath/$enable ]; then
+ unlink $enablepath/$enable
+ echo $enable disabled
+ echo do: service nginx reload
+else
+ echo $enable not found
+fi
